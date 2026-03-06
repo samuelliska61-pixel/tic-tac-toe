@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;  
+    margin: 0;    
+    background-color: #1E293B;
+    flex-direction: column; 
+    gap: 20px;
+}
+h1 {
+    font-size: 80px;
+    color: #40577c;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0; 
+}
+
+.currentPlayer {
+    text-align: center;
+    font-size: 30px;
+    color: #00D2FF;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    border: 5px solid #61456e;
+    width: 100px;
+    height: 100px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #00D2FF;
+}
+
+.cell:hover {
+    background-color: #3f3f3f;
+}
+.btn{
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid #6799e9;
+    background-color:#6799e9;
+    font-size: 18px;
+    font-family: 'Permanent Marker', cursive;
+     transition:100ms;
+
+}
+.btn:hover{
+   transform: scale(1.1);
+}
+

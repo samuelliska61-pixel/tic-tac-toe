@@ -76,10 +76,7 @@ if(board[0] === "O" && board[1] === "O" && board[2] === "O"
 statusText.style.color = "#22C55E";
 endGame = false;
 }
-if(board[0] !== "" && board[1] !== "" && board[2]!== "" &&
-  board[3] !== "" && board[4] !== "" && board[5] !== "" &&
-  board[6] !== "" && board[7] !== "" && board[8] !== "" 
- ){
+if(endGame && !board.includes("")){
   statusText.textContent = "Draw!"
   statusText.style.color = "#64748B";
   endGame = false;
@@ -87,7 +84,6 @@ if(board[0] !== "" && board[1] !== "" && board[2]!== "" &&
 }
 });
 });
-
 
 
 
